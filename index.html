@@ -6,6 +6,29 @@
     <title>Secret Message</title>
 </head>
 <body>
-    <script src="main.js"></script>
+
+    <form style="display: none;">
+        <fieldset>
+            <label for="message">Enter a secret message</label>
+            <input type="text" name="message" id="message">
+            <button>Create</button>
+        </fieldset>
+    </form>
+
+    <div id="shareContainer" style="display: none;">
+        <fieldset>
+            <label for="link">Share this link</label>
+            <input id="shareUrl" type="text" size="auto" readonly>
+        </fieldset>
+    </div>
+
+    <div id="secretMessageContainer" style="display: none;">
+        <fieldset>
+            <p id="secretMessage"></p>
+            <button id="createMessage">Create your own message</button>
+        </fieldset>
+    </div>
+
+    <script type="module" src="main.js"></script>
 </body>
 </html>
