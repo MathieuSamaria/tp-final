@@ -1,0 +1,12 @@
+form {
+   display: none; 
+}
+
+#shareContainer{
+    display: none;
+}
+
+#secretMessageContainer{
+    display: none;
+}
+

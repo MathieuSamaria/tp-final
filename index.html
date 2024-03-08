@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Message</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <form style="display: none;">
+    <form>
         <fieldset>
             <label for="message">Enter a secret message</label>
             <input type="text" name="message" id="message">
@@ -15,14 +16,14 @@
         </fieldset>
     </form>
 
-    <div id="shareContainer" style="display: none;">
+    <div id="shareContainer">
         <fieldset>
             <label for="link">Share this link</label>
-            <input id="shareUrl" type="text" size="auto" readonly>
+            <input id="shareUrl" type="text" readonly>
         </fieldset>
     </div>
 
-    <div id="secretMessageContainer" style="display: none;">
+    <div id="secretMessageContainer">
         <fieldset>
             <p id="secretMessage"></p>
             <button id="createMessage">Create your own message</button>
